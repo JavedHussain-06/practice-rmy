@@ -32,8 +32,8 @@ const AnnualPass = ({
       ? formatNumberPlate(numberPlate)
       : formatNumberPlate(placeHolder);
  const backgroundImage = blackBg
-  ? `${import.meta.env.BASE_URL}assets/GrayedOutFastag.png`
-  : `${import.meta.env.BASE_URL}assets/Fastag-template.png`;
+  ? "/rmy/assets/GrayedOutFastag.png"
+  : "/rmy/assets/Fastag-template.png";
 
   return (
     <div
