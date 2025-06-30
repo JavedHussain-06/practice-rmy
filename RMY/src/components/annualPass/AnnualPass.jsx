@@ -30,8 +30,8 @@ const AnnualPass = ({
       : formatNumberPlate(placeHolder);
 
   const backgroundImage = blackBg
-    ? "../../public/assets/GrayedOutFastag.png"
-    : "../../public/assets/Fastag-template.png";
+    ? "/rmy/assets/GrayedOutFastag.png"
+    : "/rmy/assets/Fastag-template.png";
 
   return (
     <div className={`flex flex-col items-center justify-center ${className} shrink-0`}>
@@ -65,7 +65,7 @@ const AnnualPass = ({
           ) : (
             <>
               <img
-                src="../../public/assets/dfc-logo.svg"
+                src="/rmy/assets/dfc-logo.svg"
                 alt="DFC Logo"
                 className="h-8 w-auto object-contain"
               />
