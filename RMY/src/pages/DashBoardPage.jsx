@@ -113,17 +113,17 @@ const DashBoardPage = () => {
             {[
               {
                 label: "View All Passes",
-                icon: "/assets/pass.svg",
+                icon: "../../Public/assets/pass.svg",
                 onClick: () => setShowAllPasses(true),
               },
               {
                 label: "Eligible Toll Plazas",
-                icon: "/assets/toll.svg",
+                icon: "../../Public/assets/toll.svg",
                 onClick: () => {},
               },
               {
                 label: "Order History",
-                icon: "/assets/orderHistory.svg",
+                icon: "../../Public/assets/orderHistory.svg",
                 onClick: () => setShowOrderHistory(true),
               },
             ].map((item, index) => (

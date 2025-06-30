@@ -15,7 +15,7 @@ const PaymentSuccessful = ({ handleBack }) => {
 
         <div className="flex flex-col items-start gap-2  mr-24">
           <img
-            src="/assets/paymentSuccessful.svg"
+            src="../../Public/assets/paymentSuccessful.svg"
             alt="Payment successful"
             className="w-16 h-16"
           />
