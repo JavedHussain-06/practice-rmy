@@ -103,7 +103,7 @@ const OtpVerification = ({ handleNextStep, handleBack }) => {
 
         <div className="flex items-center flex-col my-4">
           <img
-            src="/rmy/assets/phoneOTP.svg"
+            src="/assets/phoneOTP.svg"
             alt="phone"
             className="w-[6.88rem] h-[6.6rem]"
           />
