@@ -64,8 +64,8 @@ const VrnInputField = () => {
             <img
               src={
                 isValid
-                  ? "../../../Public/assets/redVrnPlate.svg"
-                  : "../../../Public/assets/blueVrnPlate.svg"
+                  ? "/assets/redVrnPlate.svg"
+                  : "/assets/blueVrnPlate.svg"
               }
               alt="IND"
               className="w-[1.22rem] h-[1.08rem]"
