@@ -2,7 +2,10 @@ import { motion } from "motion/react";
 
 const formatNumberPlate = (raw) => {
   if (!raw || raw.length !== 10) return raw;
-  return raw.replace(/^([A-Z]{2})([0-9]{2})([A-Z]{2})([0-9]{4})$/, "$1 $2 $3 $4");
+  return raw.replace(
+    /^([A-Z]{2})([0-9]{2})([A-Z]{2})([0-9]{4})$/,
+    "$1 $2 $3 $4"
+  );
 };
 
 const AnnualPass = ({
@@ -28,13 +31,14 @@ const AnnualPass = ({
     numberPlate?.trim() !== ""
       ? formatNumberPlate(numberPlate)
       : formatNumberPlate(placeHolder);
-
  const backgroundImage = blackBg
   ? `${import.meta.env.BASE_URL}assets/GrayedOutFastag.png`
   : `${import.meta.env.BASE_URL}assets/Fastag-template.png`;
 
   return (
-    <div className={`flex flex-col items-center justify-center ${className} shrink-0`}>
+    <div
+      className={`flex flex-col items-center justify-center ${className} shrink-0`}
+    >
       <div className="w-full max-w-[600px] aspect-[16.39/9] relative rounded-xl overflow-hidden text-[clamp(0.75rem, 1.2vw, 1rem)] shadow-lg">
         {/* Background */}
         <div
@@ -49,7 +53,9 @@ const AnnualPass = ({
         <div className="absolute left-[5%] top-[44%] right-[5%] flex items-center justify-between">
           {preBook ? (
             <>
-              <p className="text-white text-[1.2em] font-bold">Save Big with Annual Pass</p>
+              <p className="text-white text-[1.2em] font-bold">
+                Save Big with Annual Pass
+              </p>
               <motion.button
                 className={`text-[#3886EA] bg-white font-bold cursor-pointer rounded-[0.5rem] font-inter tracking-normal py-[0.5rem] px-[0.3rem] ${
                   preBookTextSize || vrnTextSize || "text-[1rem]"
@@ -95,7 +101,9 @@ const AnnualPass = ({
 
           <div className="flex flex-col items-center">
             <span
-              className={`text-[#989898] font-bold ${validityTextSize || "text-sm"} font-inter ${LetterSpacing}`}
+              className={`text-[#989898] font-bold ${
+                validityTextSize || "text-sm"
+              } font-inter ${LetterSpacing}`}
             >
               VALIDITY
             </span>
