@@ -30,8 +30,8 @@ const AnnualPass = ({
       : formatNumberPlate(placeHolder);
 
   const backgroundImage = blackBg
-    ? "/rmy/assets/GrayedOutFastag.png"
-    : "/rmy/assets/Fastag-template.png";
+    ? "/assets/GrayedOutFastag.png"
+    : "/assets/Fastag-template.png";
 
   return (
     <div className={`flex flex-col items-center justify-center ${className} shrink-0`}>
