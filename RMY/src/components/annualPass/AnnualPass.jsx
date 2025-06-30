@@ -1,3 +1,5 @@
+import FastagTemplate from '/assets/Fastag-template.png';
+import GrayedOutFastag from '/assets/GrayedOutFastag.png';
 import { motion } from "motion/react";
 
 const formatNumberPlate = (raw) => {
@@ -29,9 +31,8 @@ const AnnualPass = ({
       ? formatNumberPlate(numberPlate)
       : formatNumberPlate(placeHolder);
 
-  const backgroundImage = blackBg
-    ? "../../Public/assets/GrayedOutFastag.png"
-    : "../../Public/assets/Fastag-template.png";
+
+const backgroundImage = blackBg ? GrayedOutFastag : FastagTemplate;
 
   return (
     <div className={`flex flex-col items-center justify-center ${className} shrink-0`}>
