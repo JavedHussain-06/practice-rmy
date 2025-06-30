@@ -25,7 +25,7 @@ const { eligibilityData } = useDataStore();
          <FaArrowLeft className="inline" />
         </span>
         <img
-          src="../../../Public/assets/check_circle.svg"
+          src="../../../public/assets/check_circle.svg"
           alt="check"
           className="w-[2.8rem] h-[2.8rem] "
         />
@@ -38,7 +38,7 @@ const { eligibilityData } = useDataStore();
         <div className="flex justify-between items-center ">
           <h3 className="text-[1.55rem] font-bold text-black">Vehicle Info</h3>
           <img
-            src="../../../Public/assets/car.svg"
+            src="../../../public/assets/car.svg"
             alt="car"
             className="w-[2.06rem] h-[2.87rem] mr-4"
           />

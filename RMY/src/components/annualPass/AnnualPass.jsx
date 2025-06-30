@@ -1,5 +1,3 @@
-import FastagTemplate from '/assets/Fastag-template.png';
-import GrayedOutFastag from '/assets/GrayedOutFastag.png';
 import { motion } from "motion/react";
 
 const formatNumberPlate = (raw) => {
@@ -31,8 +29,9 @@ const AnnualPass = ({
       ? formatNumberPlate(numberPlate)
       : formatNumberPlate(placeHolder);
 
-
-const backgroundImage = blackBg ? GrayedOutFastag : FastagTemplate;
+  const backgroundImage = blackBg
+    ? "../../public/assets/GrayedOutFastag.png"
+    : "../../public/assets/Fastag-template.png";
 
   return (
     <div className={`flex flex-col items-center justify-center ${className} shrink-0`}>
@@ -66,7 +65,7 @@ const backgroundImage = blackBg ? GrayedOutFastag : FastagTemplate;
           ) : (
             <>
               <img
-                src="../../Public/assets/dfc-logo.svg"
+                src="../../public/assets/dfc-logo.svg"
                 alt="DFC Logo"
                 className="h-8 w-auto object-contain"
               />
